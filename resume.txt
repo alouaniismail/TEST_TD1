@@ -1,0 +1,36 @@
+TD1:
+1/
+La derniere version de java est la 19 (20 septembre 2022).
+.class et javac --version donne: 11.0.16.
+jvm a une version fixe: la 15.0.3.
+2/
+La classe jauge comptabilise le nombre de places occupées dans l'encapsulation Autobus. Cette jauge encapsule le code utilisant 2 entiers pour calculer les places occupées. 
+La classe position représente trois positions d'un passager standard par rapport à un autobus. Cette position encapsule le code utilisant trois constantes entieres ASSIS, DEBOUT, DEHORS. 
+3/
+Ecrire des tests unitaires sur jauge et position. Ce sont des tests bien sur fonctionnels qui visent à tester l'unité et pas une méthode. Car un test peut impliquer plusieurs methodes d'un objet => non regression => changer la realisation sans changer les tests.
+Les assertions: avec les doubles points (message d'"erreur"). && -ea a l'execution.
+Rq: sudo snap install code --classic pour installer vscode.
+= dans une assertion fausse le vrai sens de l'interpreteur vis a vis du code ecrit.
+l'instanciation d'une classe
+declarer une variable pour contenir une instance
+ecriture d'appel de methodes a cette instance
+la déclarer en static indépendamment de l'instanciation de la classe
+OU generer une instance virtuelle et faire un envoi de message vers ELLE depuis le MAIN.
+4/
+Réalisation itérative (-ea)des cas de tests dans des méthodes d'accés puis regroupement (test exec. dans le main).
+La classe Position est constante comporant avec la classe jauge car aucune de ses methodes d'instances ne modifie l'etat de Position une fois instancie (voir les prototypes).
+5/
+Un coup d'oeil sur le source ExecutionExemple.java:
+L'opérateur + est un + normal et aussi un opérateur append pour les instances de la classe String.
+StringBuilder/String mono-thread(asynchrone)
+StringBuffer multi-thread(synchrone) -> prend plus de temps.
+Les String sont constant en terme d'instances de classes: ils sont immuables.
+L'affectation crée une nouvelle zone mémoire dédiée(persistance).
+===============================
+public StringBuffer(String string) permet de transformer une chaine constante en non constante et INVERSEMENT.
+===============================
+La classe qui définit println est : System.out qui est une classe qui a la méthode PUBLIQUE println.
+over-loading via les paramètres.
+La println la plus simple va être appelée.
+final var=... fixe la valeur de la variable var à : ....
+
